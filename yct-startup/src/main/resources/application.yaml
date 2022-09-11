@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  undertow:
+    max-http-post-size: 10MB
+    threads:
+      io: 20
+      worker: 100
+  shutdown: graceful #支持优雅停机
+spring:
+  application:
+    name: ytnetwork-cps-template
